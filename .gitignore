@@ -1,0 +1,47 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.python-version
+
+# Packaging / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# Logs / coverage / profiling
+*.log
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# R session files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# R package / renv caches
+.Rproj*
+.Rcheck/
+renv/library/
+renv/python/
+renv/staging/
+rsconnect/

@@ -1,0 +1,9 @@
+[submodule "pids-drg-fda-scraper"]
+	path = pids-drg-fda-scraper
+	url = https://github.com/carlosresu/pids-drg-fda-scraper.git
+[submodule "pids-drg-drugbank-generics"]
+	path = pids-drg-drugbank-generics
+	url = https://github.com/carlosresu/pids-drg-drugbank-generics.git
+[submodule "pids-drg-who-atc"]
+	path = pids-drg-who-atc
+	url = https://github.com/carlosresu/pids-drg-who-atc.git
