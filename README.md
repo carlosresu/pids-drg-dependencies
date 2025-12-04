@@ -1,25 +1,23 @@
-# pids-drg-dependencies
+# PIDS DRG dependencies
 
-Container repo that pins the PIDS DRG-related data projects as git submodules. Use this to pull everything in one place with full history for each dependency.
+Container repo that pins the PIDS DRG data helpers as git submodules so they can be fetched in one clone with full history.
 
-## Included submodules
-- `pids-drg-fda-scraper`
-- `pids-drg-drugbank-generics`
-- `pids-drg-who-atc`
-- `pids-drg-shadow-billing-sandbox`
+## Submodules
+- `pids-drg-fda-scraper` – Python scrapers for FDA Philippines drug and food catalogs; outputs brand→generic maps and caches raw downloads. Can copy drug outputs into `inputs/drugs/` for downstream pipelines.
+- `pids-drg-drugbank-generics` – R script to build lean DrugBank exports (generics, synonyms, brands, dosages, salts, products, ATC, lookup tables) used for matching and FDA correction.
+- `pids-drg-who-atc` – R scraper/exporter for WHO ATC/DDD; produces dated raw snapshots plus canonical Level‑5 molecule and excluded placeholder CSVs.
+- `pids-drg-shadow-billing-sandbox` – RMarkdown notebooks that merge DRG claim CSVs into master tables for shadow billing analysis.
 
 ## Getting started
 ```bash
 # clone with submodules
 git clone --recurse-submodules https://github.com/carlosresu/pids-drg-dependencies.git
 
-# if you already cloned without submodules
+# if already cloned
 git submodule update --init --recursive
 
-# update submodules to their latest tracked commits
+# refresh submodules to latest tracked commits
 git submodule update --remote --merge
 ```
 
-## Notes
-- Default branch is `master`.
-- `.gitignore` covers common Python and R artifacts for convenience when working across the dependencies.
+Default branch is `master`. Each submodule carries its own README with detailed usage and setup.
