@@ -7,3 +7,6 @@
 [submodule "pids-drg-who-atc"]
 	path = pids-drg-who-atc
 	url = https://github.com/carlosresu/pids-drg-who-atc.git
+[submodule "pids-drg-shadow-billing-sandbox"]
+	path = pids-drg-shadow-billing-sandbox
+	url = https://github.com/carlosresu/pids-drg-shadow-billing-sandbox.git

@@ -6,6 +6,7 @@ Container repo that pins the PIDS DRG-related data projects as git submodules. U
 - `pids-drg-fda-scraper`
 - `pids-drg-drugbank-generics`
 - `pids-drg-who-atc`
+- `pids-drg-shadow-billing-sandbox`
 
 ## Getting started
 ```bash
