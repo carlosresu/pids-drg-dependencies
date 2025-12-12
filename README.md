@@ -1,6 +1,33 @@
-# PIDS DRG dependencies
+# PIDS DRG Dependencies
 
-Container repo that pins the PIDS DRG data helpers as git submodules so they can be fetched in one clone with full history.
+Container repository that pins the PIDS DRG data helper projects as git submodules so they can be fetched in one clone with full history.
+
+**Last Updated:** December 2025
+
+---
+
+## Progress Since June 2025
+
+### Key Accomplishments
+
+| Date | Milestone |
+|------|-----------|
+| **Jun 2025** | Created container repo, added initial submodules |
+| **Jul 2025** | Added FDA scraper submodule with drug/food scrapers |
+| **Aug 2025** | Added WHO ATC scraper submodule with parallelized crawling |
+| **Sep 2025** | Added DrugBank generics exporter with lean tables |
+| **Oct 2025** | Added shadow billing sandbox for DRG claim analysis |
+| **Dec 2025** | Refreshed all submodule READMEs, documented container usage |
+
+### Current Status
+
+All 4 submodules are operational:
+- **pids-drg-fda-scraper:** Active FDA PH drug/food catalog scraping
+- **pids-drg-drugbank-generics:** DrugBank lean export pipeline (8 data tables + 6 lookup tables)
+- **pids-drg-who-atc:** WHO ATC hierarchy scraping with Level-5 molecule exports
+- **pids-drg-shadow-billing-sandbox:** DRG claim CSV merging for shadow billing analysis
+
+---
 
 ## Submodules
 - `pids-drg-fda-scraper` – Python scrapers for FDA Philippines drug and food catalogs; outputs brand→generic maps and caches raw downloads. Can copy drug outputs into `inputs/drugs/` for downstream pipelines.
